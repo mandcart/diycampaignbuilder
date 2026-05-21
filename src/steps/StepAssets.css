@@ -1,0 +1,93 @@
+.step-assets__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 0.25rem;
+}
+
+.step-assets__description {
+  color: #666;
+  font-size: 0.9375rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-assets__grid {
+  border: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step-assets__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.step-assets__card:hover {
+  border-color: #ff9900;
+  background-color: #fffbf5;
+}
+
+.step-assets__card--selected {
+  border-color: #ff9900;
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.15);
+}
+
+.step-assets__card-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.step-assets__card-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #232f3e;
+}
+
+.step-assets__card-desc {
+  font-size: 0.8125rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.step-assets__checkbox {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: #ff9900;
+}
+
+.step-assets__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (max-width: 540px) {
+  .step-assets__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,230 @@
+.step-review__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 0.25rem;
+}
+
+.step-review__description {
+  color: #666;
+  font-size: 0.9375rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Review sections */
+.review-section {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.review-section__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.review-section__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.review-section__logo-preview {
+  max-width: 80px;
+  max-height: 50px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  object-fit: contain;
+}
+
+/* Subsections (asset-specific) */
+.review-subsection {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.review-subsection:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.review-subsection__heading {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #232f3e;
+  margin-bottom: 0.75rem;
+}
+
+/* Summary items */
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-item__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.summary-item__value {
+  font-size: 0.9375rem;
+  color: #232f3e;
+  line-height: 1.4;
+}
+
+.summary-item__value--colours {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Colour swatches */
+.colour-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.colour-swatch__box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  display: inline-block;
+}
+
+.colour-swatch__value {
+  font-size: 0.8125rem;
+  color: #666;
+}
+
+/* Badge list */
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge-list__badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff8ed;
+  border: 1px solid #ff9900;
+  border-radius: 20px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #232f3e;
+}
+
+/* Confirm checkbox */
+.step-review__confirm {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.step-review__checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #232f3e;
+  line-height: 1.4;
+}
+
+.step-review__checkbox {
+  margin-top: 2px;
+  width: 1.125rem;
+  height: 1.125rem;
+  accent-color: #ff9900;
+  flex-shrink: 0;
+}
+
+/* Actions */
+.step-review__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn--generate {
+  padding: 0.875rem 2.5rem;
+  background-color: #ff9900;
+  color: #fff;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn--generate:hover:not(:disabled) {
+  background-color: #ec8c04;
+  transform: translateY(-1px);
+}
+
+.btn--generate:disabled {
+  background-color: #fcd9a0;
+  color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Loading overlay */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(35, 47, 62, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-overlay__content {
+  text-align: center;
+  color: #fff;
+}
+
+.loading-overlay__spinner {
+  width: 56px;
+  height: 56px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ff9900;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-overlay__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.loading-overlay__subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
